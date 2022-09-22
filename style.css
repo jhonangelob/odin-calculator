@@ -20,11 +20,12 @@ section {
 .screen {
   font-size: 3em;
   font-weight: 500;
-  height: 70px;
-  text-align: right;
+  padding-inline: 6px;
+  text-align: end;
   border-radius: 6px;
   margin-block: 2rem;
   background-color: azure;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
