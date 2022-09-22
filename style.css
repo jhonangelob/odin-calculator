@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.app__calculator {
+  width: min(100%, 230px);
+  margin: auto;
+}
+
+.screen {
+  font-size: 3em;
+  font-weight: 500;
+  height: 70px;
+  text-align: right;
+  border-radius: 6px;
+  margin-block: 2rem;
+  background-color: azure;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: rgb(62, 60, 60);
+  border-radius: 50px;
+  border-style: none;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: 0.1s all ease-in;
+}
+
+#zero {
+  min-width: 110px;
+}
+
+.row button:last-child {
+  background-color: orange !important;
+  color: white !important;
+}
+
+.row:first-child button {
+  background-color: lightgray;
+  color: black;
+}
+
+.pressed {
+  opacity: 0.6;
+  transition: all 0.3s ease-out;
+}
